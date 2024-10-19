@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>UTFPR-Orientação Objetos</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cadastro de Tvs</h1>
+
+    <input id="iptBrand" type="text" placeholder="Digite a Marca" />
+    <input
+      id="iptVoltage"
+      type="number"
+      placeholder="Digite o número de voltagem"
+    />
+    <input id="iptFees" type="number" placeholder="Digite o número de juros" />
+    <input
+      id="iptInches"
+      type="number"
+      placeholder="Digite o número de polegadas"
+    />
+    <input id="btnSave" type="button" value="Cadastrar" />
+    <input id="btnList" type="button" value="Listar" />
+
+    <table>
+      <th>Marca</th>
+      <th>Voltagem</th>
+      <th>Juros</th>
+      <th>Polegadas</th>
+      <tbody id="tblTv"></tbody>
+    </table>
+
+    <a href="/index.html">Voltar</a>
+    <script src="src/indexTv.ts"></script>
+  </body>
+</html>

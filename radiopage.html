@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>UTFPR-Orientação Objetos</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cadastro de Rádios</h1>
+
+    <input id="iptBrand" type="text" placeholder="Digite a Marca" />
+    <input
+      id="iptVoltage"
+      type="number"
+      placeholder="Digite o número de voltagem"
+    />
+    <input id="iptFees" type="number" placeholder="Digite o número de juros" />
+    <input id="iptWeight" type="number" placeholder="Digite o número de peso" />
+    <input id="btnSave" type="button" value="Cadastrar" />
+    <input id="btnList" type="button" value="Listar" />
+
+    <table>
+      <th>Marca</th>
+      <th>Voltagem</th>
+      <th>Juros</th>
+      <th>Peso</th>
+      <tbody id="tblRadio"></tbody>
+    </table>
+
+    <a href="/index.html">Voltar</a>
+    <script src="src/indexRadio.ts"></script>
+  </body>
+</html>
