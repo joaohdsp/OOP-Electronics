@@ -3,16 +3,11 @@ import { Electronics } from "./Electronics";
 export class Radio extends Electronics {
   weight?: number;
 
-  setFees(fees: number) {
-    if (fees > 50) {
-      throw new Error(
-        "A porcentagem de juros não pode ser maior que 50 no rádio"
-      );
+  constructor(brand: string, voltage: number, weight: number, fees?: number) {
+    super(brand, voltage, fees); // Chama o construtor da classe Electronics
+    if (fees !== undefined && fees > 50) {
+      alert("A porcentagem de juros deve ser menor que 50 para radio");
     }
-    this.fees = fees;
-  }
-
-  getFees() {
-    return this.fees;
+    this.weight = weight; // Define a propriedade weight
   }
 }
