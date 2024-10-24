@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Cadastro de Rádios</h1>
+    <h1>Cadastro de Tvs</h1>
 
     <input id="iptBrand" type="text" placeholder="Digite a Marca" />
     <input
@@ -14,7 +14,11 @@
       placeholder="Digite o número de voltagem"
     />
     <input id="iptFees" type="number" placeholder="Digite o número de juros" />
-    <input id="iptWeight" type="number" placeholder="Digite o número de peso" />
+    <input
+      id="iptInches"
+      type="number"
+      placeholder="Digite o número de polegadas"
+    />
     <input id="btnSave" type="button" value="Cadastrar" />
     <input id="btnList" type="button" value="Listar" />
 
@@ -22,11 +26,11 @@
       <th>Marca</th>
       <th>Voltagem</th>
       <th>Juros</th>
-      <th>Peso</th>
-      <tbody id="tblRadio"></tbody>
+      <th>Polegadas</th>
+      <tbody id="tblTelevision"></tbody>
     </table>
 
     <a href="/index.html">Voltar</a>
-    <script src="src/indexRadio.ts"></script>
+    <script src="src/televisionView.ts"></script>
   </body>
 </html>
